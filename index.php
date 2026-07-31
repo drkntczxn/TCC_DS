@@ -11,11 +11,11 @@
 
     <div class="login-container">
 
-        <h1>Car Wash</h1>
-        <p>Select an option</p>
+        <h1>Ótica Fany</h1>
+        <p>Escolha uma das opções abaixo</p>
 
-        <a class="btn" href="customerLogin.php">Customer</a>
-        <a class="btn" href="staffLogin.html">Staff</a>
+        <a class="btn" href="telaLoginLogin.php">Cliente</a>
+        <a class="btn" href="staffLogin.html">Funcionários</a>
 
     </div>
 
