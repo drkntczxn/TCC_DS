@@ -14,7 +14,7 @@
         <h1>Ótica Fany</h1>
         <p>Escolha uma das opções abaixo</p>
 
-        <a class="btn" href="telaLoginLogin.php">Cliente</a>
+        <a class="btn" href="telaLogin.php">Cliente</a>
         <a class="btn" href="staffLogin.html">Funcionários</a>
 
     </div>

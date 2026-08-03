@@ -3,7 +3,7 @@
         <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=0.8">
-                <title>Customer Login</title>
+                <title>Login Cliente</title>
                 <link rel="stylesheet" href="style.css">
         </head>
 <body> 
@@ -11,13 +11,13 @@
     
 
         <div class="login-container">
-            <h1>Car Wash</h1><br><br> 
+            <h1>Ótica Fany</h1><br><br>     
             <form action="register.php" method="post">
             Name: <input type="text" name="name_cust" id="name"><br><br>
             <!--Phone: <input type="text" name="phone_cust" id="phone"><br><br> "to be developed" --> 
             Email: <input type="text" name="email_cust" id="email"><br>
             
-                <p>Select washing type:</p>
+               <!-- <p>Select washing type:</p>
                 <p>Simple wash $60.00
                 <input type="radio" name="wash_type" value="Simple"></p>    
                 <p>Full wash $100.00
@@ -27,7 +27,7 @@
 
                 <p>Wax:</p>
                 Yes: <input type="radio" name="wax" id="yes" value="Yes" > 
-                No: <input type="radio" name="wax" id="no" value="No" ><br><br><br>
+                No: <input type="radio" name="wax" id="no" value="No" ><br><br><br>-->
                 
 
                     <!--<select name="time" id="time">
