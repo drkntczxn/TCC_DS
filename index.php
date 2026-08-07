@@ -13,20 +13,22 @@
 
         <div class="header-container">
 
-            <h1>Ótica Fany</h1>
+            <h1> Ótica Fany</h1>
 
+            
+            <a class="btn" href="telaLogin.php">
+            Login
+        </a>
         </div>
 
     </header>
 
 
-    <!--<main>
+    <main>
 
         <p>Escolha uma das opções abaixo</p>
 
-        <a class="btn" href="telaLogin.php">
-            Cliente
-        </a>
+        
 
     </main>
 
