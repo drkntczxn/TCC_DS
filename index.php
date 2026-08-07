@@ -9,15 +9,26 @@
 
 <body>
 
-    <div class="login-container">
+    <header class="site-header">
 
-        <h1>Ótica Fany</h1>
+        <div class="header-container">
+
+            <h1>Ótica Fany</h1>
+
+        </div>
+
+    </header>
+
+
+    <!--<main>
+
         <p>Escolha uma das opções abaixo</p>
 
-        <a class="btn" href="telaLogin.php">Cliente</a>
-        <a class="btn" href="staffLogin.html">Funcionários</a>
+        <a class="btn" href="telaLogin.php">
+            Cliente
+        </a>
 
-    </div>
+    </main>
 
 </body>
 </html>
