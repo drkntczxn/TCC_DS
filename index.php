@@ -69,7 +69,6 @@
 </div>
 
   </main>
-
        <!--<div class="col-sm">
           <div class="card" style="width: 18rem;">
             <img src="imagens/ryzen5.jpg">
@@ -78,6 +77,5 @@
               <p class="card-text"> As placas de vídeo mais potentes em um processador de desktop, o poder de jogar. Totalmente desbloqueado. A AMD permite que os Processadores de 3a geração Ryzen ofereçam o mais alto desempenho para uma ou múltiplas linhas de execução e de qualquer Processador de desktop convencional.</p>
               <a href="ryzen.html" class="btn btn-outline-primary bg-white"> Visitar </a>
         </div> </div> </div>--> 
-
 </body>
 </html>
