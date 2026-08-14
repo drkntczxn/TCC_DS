@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <title>Ótica Fany</title>
 </head>
 
@@ -61,7 +68,16 @@
 
 </div>
 
-    </main>
+  </main>
+
+       <!--<div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img src="imagens/ryzen5.jpg">
+            <div class="card-body">
+              <h4><b> AMD Ryzen 5 3400G </b></h4>
+              <p class="card-text"> As placas de vídeo mais potentes em um processador de desktop, o poder de jogar. Totalmente desbloqueado. A AMD permite que os Processadores de 3a geração Ryzen ofereçam o mais alto desempenho para uma ou múltiplas linhas de execução e de qualquer Processador de desktop convencional.</p>
+              <a href="ryzen.html" class="btn btn-outline-primary bg-white"> Visitar </a>
+        </div> </div> </div>--> 
 
 </body>
 </html>

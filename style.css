@@ -37,6 +37,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #3f240f;
+   
 }
 
 .header-container h1 {
@@ -47,7 +49,7 @@ body {
     font-weight: normal;
     letter-spacing: 1px;
 
-    color: #5c3d1e;
+    color: #ac8f6e;
 }
 
 
@@ -327,3 +329,4 @@ input.return-button {
         height: 220px;
     }
 }
+
