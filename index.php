@@ -28,26 +28,37 @@
 
     <main>
 
-    <<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
+
     <div class="carousel-item active">
-      <img src="imagens/carousel1.jpg" class="d-block w-100" alt="imagens/carousel2.jpg">
+      <img src="imagens/carousel1.jpg" class="d-block w-100" alt="carousel2.jpg">
     </div>
+
     <div class="carousel-item">
-      <img src="imagens/carousel2.jpg" class="d-block w-100" alt="imagens/carousel3.jpg">
+      <img src="imagens/carousel2.jpg" class="d-block w-100" alt="carousel3.jpg">
     </div>
+
     <div class="carousel-item">
-      <img src="imagens/carousel3.jpg" class="d-block w-100" alt="imagens/carousel1.jpg">
+      <img src="imagens/carousel3.jpg" class="d-block w-100" alt="carousel1.jpg">
     </div>
+
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+
 </div>
 
     </main>

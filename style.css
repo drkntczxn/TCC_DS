@@ -12,7 +12,6 @@ body {
     background-color: #f5f1ea;
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     color: #3a2c1e;
-
     min-height: 100vh;
 }
 
@@ -53,18 +52,21 @@ body {
 
 
 /* =========================
-   MAIN / LANDING CONTENT
+   MAIN
    ========================= */
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     text-align: center;
 
-    padding: 80px 20px;
+    /*
+       Removed the huge 80px vertical padding.
+       This was creating the large empty space.
+    */
+    padding: 0 20px;
 }
 
 main p {
@@ -75,7 +77,7 @@ main p {
 
 
 /* =========================
-   OLD LOGIN CONTAINER
+   LOGIN CONTAINER
    ========================= */
 
 .login-container {
@@ -212,82 +214,116 @@ input.return-button {
 }
 
 
+/* =========================
+   CAROUSEL
+   ========================= */
+
 #carouselExampleAutoplaying {
     width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    height: 350px !important;
+
+    margin: 0 auto;
+
+    overflow: hidden !important;
     position: relative;
 }
 
 
-/* Área do carrossel em 16:9 */
+/* Carousel inner */
+
 #carouselExampleAutoplaying .carousel-inner {
-    position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
+    height: 350px !important;
+
+    overflow: hidden !important;
+
     margin: 0;
     padding: 0;
 }
 
 
-/* Todos os slides ficam sobrepostos */
+/* Individual slides */
+
 #carouselExampleAutoplaying .carousel-item {
-    position: absolute;
-    inset: 0;
     width: 100%;
-    height: 100%;
-    display: none;
+    height: 350px !important;
+
     margin: 0;
     padding: 0;
 }
 
 
-/* Somente o slide ativo aparece */
+/* Active slide */
+
 #carouselExampleAutoplaying .carousel-item.active {
-    display: block;
+    height: 350px !important;
 }
 
 
-/* Imagem ocupa todo o espaço do slide */
+/* Images */
+
 #carouselExampleAutoplaying .carousel-item img {
-    width: 100% !important;
-    height: 100% !important;
     display: block;
-    object-fit: cover;
+
+    width: 100% !important;
+    height: 350px !important;
+
+    max-width: none !important;
+
+    object-fit: cover !important;
     object-position: center;
+
     margin: 0;
     padding: 0;
-}
 
-
-/* Botões de navegação */
-#carouselExampleAutoplaying .carousel-control-prev,
-#carouselExampleAutoplaying .carousel-control-next {
-    width: 8%;
-    top: 0;
-    bottom: 0;
-}
-
-
-/* Remove possíveis espaços */
-#carouselExampleAutoplaying img,
-#carouselExampleAutoplaying .carousel-item,
-#carouselExampleAutoplaying .carousel-inner {
     border: 0;
 }
 
 
-/* Celular */
+/* =========================
+   CAROUSEL CONTROLS
+   ========================= */
+
+#carouselExampleAutoplaying .carousel-control-prev,
+#carouselExampleAutoplaying .carousel-control-next {
+    width: 8%;
+    height: 350px;
+
+    top: 0;
+    bottom: auto;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
 @media (max-width: 768px) {
+
+    main {
+        padding: 0 10px;
+    }
+
     #carouselExampleAutoplaying {
         width: 100%;
+        height: 220px !important;
     }
 
     #carouselExampleAutoplaying .carousel-inner {
-        aspect-ratio: 16 / 9;
+        height: 220px !important;
+    }
+
+    #carouselExampleAutoplaying .carousel-item,
+    #carouselExampleAutoplaying .carousel-item.active {
+        height: 220px !important;
+    }
+
+    #carouselExampleAutoplaying .carousel-item img {
+        height: 220px !important;
+    }
+
+    #carouselExampleAutoplaying .carousel-control-prev,
+    #carouselExampleAutoplaying .carousel-control-next {
+        height: 220px;
     }
 }
-
