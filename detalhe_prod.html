@@ -1,0 +1,124 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Produto - Ótica Fany</title>
+</head>
+
+<body class="pagina-produto">
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            <h1>Ótica Fany</h1>
+        </div>
+
+        <nav class="menu">
+            <a href="index.php">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="detalhes-produto">
+
+            <div class="imagem-detalhe">
+                <img id="imagemProduto" src="" alt="Produto">
+            </div>
+
+
+            <div class="informacoes-produto">
+
+                <h2 id="nomeProduto"></h2>
+
+                <p id="descricaoProduto"></p>
+
+                <strong id="precoProduto"></strong>
+
+                <p class="estoque">
+                    Produto disponível em estoque.
+                </p>
+
+                <button class="botao-produto">
+                    Comprar
+                </button>
+
+                <br><br>
+
+                <a href="produtos.html" class="voltar-produtos">
+                    ← Voltar para produtos
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        const produtos = {
+
+            1: {
+                nome: "Armação de Óculos",
+                descricao: "Armação moderna e confortável para o dia a dia.",
+                preco: "R$ 90,00",
+                imagem: "img/oculos1.jpeg"
+            },
+
+            2: {
+                nome: "Armação de Óculos",
+                descricao: "Modelo elegante para o dia a dia.",
+                preco: "R$ 90,00",
+                imagem: "img/oculos2.jpeg"
+            },
+
+            3: {
+                nome: "Armação de Óculos",
+                descricao: "Modelo clássico e sofisticado.",
+                preco: "R$ 90,00",
+                imagem: "img/oculos3.jpeg"
+            }
+
+        };
+
+
+        const parametros = new URLSearchParams(window.location.search);
+
+        const id = parametros.get("id");
+
+        const produto = produtos[id];
+
+
+        if (produto) {
+
+            document.getElementById("nomeProduto").textContent = produto.nome;
+
+            document.getElementById("descricaoProduto").textContent = produto.descricao;
+
+            document.getElementById("precoProduto").textContent = produto.preco;
+
+            document.getElementById("imagemProduto").src = produto.imagem;
+
+            document.getElementById("imagemProduto").alt = produto.nome;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+```
