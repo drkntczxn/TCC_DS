@@ -14,24 +14,23 @@
                 include "connection.php";
                 //include database connection
 
-                $result = mysqli_query($con, "SELECT * FROM tbcliente");
+                $result = mysqli_query($con, "SELECT * FROM TBCLIENTE");
 
                 echo "<h2>Clientes Ótica Fany:</h2><p style='color:gray'>*Apenas pessoal autorizado*</p>";
                 
 
-                echo"<h4>ID  - Nome  -  Email </h4><br>";
+                echo"<p>ID  - Nome  -  Email - CPF<p>";
 
-                /*while($row = mysqli_fetch_assoc($result)){
+                while($row = mysqli_fetch_assoc($result)){
                 echo"<div class='customersList'>";
-                    echo"$row[id_cust] -
-                        $row[name_cust] -
-                        $row[email_cust] -
-                        $row[wash_type] -
-                        $row[wax]<br> 
-                        <a href=delete.php?id=$row[id_cust]>Delete</a> |
-                        <a href=edit.php?id=$row[id_cust]> Edit </a>";
+                    echo"$row[ID_CLI] -
+                        $row[NOMECLI] -
+                        $row[EMAIL] -
+                        $row[CPFCLI]
+                        <a href=delete.php?id=$row[ID_CLI]>Delete</a> |
+                        <a href=edit.php?id=$row[ID_CLI]> Edit </a>";
                     echo"</div>";
-                }*/
+                }
                 ?>
 
             <br><br>

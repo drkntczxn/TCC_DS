@@ -13,7 +13,12 @@
         <div class="login-container">
             <h1>Ótica Fany</h1><br><br>     
             <form action="register.php" method="post">
-            Nome: <input type="text" name="nomecli" id="nome"><br><br>
+
+            <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" name="name_cust" id="name" placeholder="Digite seu nome">
+            </div>
+            
             Email: <input type="text" name="email" id="email"><br><br>
             CPF: <input type="text" name="cpfcli" id="cpf"><br>
             
