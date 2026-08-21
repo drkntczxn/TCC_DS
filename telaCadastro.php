@@ -13,9 +13,9 @@
         <div class="login-container">
             <h1>Ótica Fany</h1><br><br>     
             <form action="register.php" method="post">
-            Nome: <input type="text" name="name_cust" id="name"><br><br>
-            <!--Phone: <input type="text" name="phone_cust" id="phone"><br><br> "to be developed" --> 
-            Email: <input type="text" name="email_cust" id="email"><br>
+            Nome: <input type="text" name="nomecli" id="nome"><br><br>
+            Email: <input type="text" name="email" id="email"><br><br>
+            CPF: <input type="text" name="cpfcli" id="cpf"><br>
             
                <!-- <p>Select washing type:</p>
                 <p>Simple wash $60.00
@@ -37,12 +37,9 @@
                         <option value="1pm">1:00PM</option>
                         <option value="3pm">3:00PM</option>
                         <option value="5pm">5:00PM</option>
-                    </select><br>-->
-                    <p>Não tem cadastro na Ótica Fany ainda? Clique <a href="telaCadastro.php">Aqui</a></p>
-
-
-                    <!--botão entrar será aqui-->
-                     
+                    </select><br>-->               
+                    <br><br> <input type="submit" value="Salvar" class="return-button">
+                    <a class="return-button" href="index.php">Voltar</a>
             </form>
             
            

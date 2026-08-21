@@ -8,20 +8,20 @@
 </head>
 <body>
     
-
+    <main>
         <div class="login-container">
                 <?php
                 include "connection.php";
                 //include database connection
 
-                $result = mysqli_query($con, "SELECT * FROM customer");
+                $result = mysqli_query($con, "SELECT * FROM tbcliente");
 
-                echo "<h2>View Customers:</h2><p style='color:gray'>*Only authorized personnel*</p>";
+                echo "<h2>Clientes Ótica Fany:</h2><p style='color:gray'>*Apenas pessoal autorizado*</p>";
                 
 
-                echo"<h4>ID  -  Customer Name  -  Email  -  Wash Type  -  Wax</h4><br>";
+                echo"<h4>ID  - Nome  -  Email </h4><br>";
 
-                while($row = mysqli_fetch_assoc($result)){
+                /*while($row = mysqli_fetch_assoc($result)){
                 echo"<div class='customersList'>";
                     echo"$row[id_cust] -
                         $row[name_cust] -
@@ -31,13 +31,14 @@
                         <a href=delete.php?id=$row[id_cust]>Delete</a> |
                         <a href=edit.php?id=$row[id_cust]> Edit </a>";
                     echo"</div>";
-                }
+                }*/
                 ?>
 
             <br><br>
             <a class="return-button" href="index.php">Return</a>
 
         </div>
+</main>
 </body>
 </html>
 

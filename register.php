@@ -1,14 +1,14 @@
 <?php
 include "connection.php";
 
-$name = $_POST['name_cust'];
-$email = $_POST['email_cust'];
-$washType = $_POST['wash_type'];
-$wax = $_POST['wax'];
+$nome = $_POST['namecli'];
+$email = $_POST['email'];
+$cpf = $_POST['cpf'];
 
 
-$sql = "INSERT INTO customer (name_cust, email_cust, wash_type, wax)
-VALUES ('$name', '$email','$washType','$wax')";
+
+$sql = "INSERT INTO tbcliente (nomecli, email, cpfcli)
+VALUES ('$nome', '$email','$cpf')";
 
 mysqli_query($con, $sql);
 
