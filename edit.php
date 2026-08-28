@@ -9,6 +9,7 @@ $row = mysqli_fetch_assoc($result);
 <link rel="stylesheet" href="css/style.css">
     <main>
         <div class="login-container">
+            <h1>Ótica Fany</h1><br><br>  
             <form action="update.php" method="post">
                 <input type="hidden" nome="id"
                 value="<?php echo $row['ID_CLI']; ?>"><br>
@@ -17,7 +18,7 @@ $row = mysqli_fetch_assoc($result);
                 Email: <input type="text" nome="email"
                 value="<?php echo $row['EMAIL']; ?>"><br>
                 CPF: <input type="text" nome="cpf"
-                value="<?php echo $row['CPFCLI']; ?>"><br>
+                value="<?php echo $row['CPFCLI']; ?>"><br><br>
 
 
             <input type="submit" value="Atualizar" class="return-button">
