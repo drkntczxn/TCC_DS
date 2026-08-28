@@ -74,7 +74,8 @@ main {
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    overflow: hidden; /* prevents carousel margin-collapse under header */
+    padding-top: 1px; /* breaks margin-collapse, invisible spacing */
+    overflow: hidden;
 }
 
 main p {
@@ -258,30 +259,31 @@ input.return-button {
 
 #carouselExampleAutoplaying {
     width: 100%;
-    height: 350px !important;
+    height: 500px !important;
     margin: 0 auto;
+    margin-top: 0; /* explicit, overrides any inherited/negative margin */
     overflow: hidden !important;
     position: relative;
 }
 
 #carouselExampleAutoplaying .carousel-inner {
     width: 100%;
-    height: 350px !important;
+    height: 5000px !important;
     overflow: hidden !important;
 }
 
 #carouselExampleAutoplaying .carousel-item {
     width: 100%;
-    height: 350px !important;
+    height: 500px !important;
 }
 
 #carouselExampleAutoplaying .carousel-item img {
     display: block;
     width: 100% !important;
-    height: 350px !important;
+    height: 500px !important;
     max-width: none !important;
     object-fit: cover !important;
-    object-position: center;
+    object-position: center top; /* changed from center */
     border: 0;
 }
 
