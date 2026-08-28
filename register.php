@@ -1,9 +1,9 @@
 <?php
 include "connection.php";
 
-$nome = $_POST['namecli'];
+$nome = $_POST['nomecli'];
 $email = $_POST['email'];
-$cpf = $_POST['cpf'];
+$cpf = $_POST['cpfcli'];
 
 
 

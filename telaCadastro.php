@@ -4,7 +4,7 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=0.8">
                 <title>Login Cliente</title>
-                <link rel="stylesheet" href="style.css">
+                <link rel="stylesheet" href="css/style.css">
         </head>
 <body> 
     <main>
@@ -16,30 +16,12 @@
             Nome: <input type="text" name="nomecli" id="nome"><br><br>
             Email: <input type="text" name="email" id="email"><br><br>
             CPF: <input type="text" name="cpfcli" id="cpf"><br>
+            <!--Senha: <input type="text" name="senhacli" id="cpf"><br>-->
+              
+
             
-               <!-- <p>Select washing type:</p>
-                <p>Simple wash $60.00
-                <input type="radio" name="wash_type" value="Simple"></p>    
-                <p>Full wash $100.00
-                <input type="radio" name="wash_type" value="Full"></p>
-                <p>Detailed wash $200.00
-                <input type="radio" name="wash_type" value="Detailed"> </p><br>    
-
-                <p>Wax:</p>
-                Yes: <input type="radio" name="wax" id="yes" value="Yes" > 
-                No: <input type="radio" name="wax" id="no" value="No" ><br><br><br>-->
-                
-
-                    <!--<select name="time" id="time">
-                        <option>Wash Time</option>
-                        <option value="9am">09:00AM</option>
-                        <option value="11am">11:00AM</option>
-                        <option value="1pm">1:00PM</option>
-                        <option value="3pm">3:00PM</option>
-                        <option value="5pm">5:00PM</option>
-                    </select><br>-->               
-                    <br><br> <input type="submit" value="Salvar" class="return-button">
-                    <a class="return-button" href="index.php">Voltar</a>
+            <br><br> <input type="submit" value="Salvar" class="return-button">
+            <a class="return-button" href="index.php">Voltar</a>
             </form>
             
            

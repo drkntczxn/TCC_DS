@@ -1,18 +1,17 @@
 <?php
 include "connection.php";
 
-$id = $_POST['id'];
-$name = $_POST['name'];
-$email = $_POST['email'];
-$wash_type = $_POST['wash_type'];
-$wax = $_POST['wax'];
+$id = $_POST['ID_CLI'];
+$nome = $_POST['NOMECLI'];
+$email = $_POST['EMAIL'];
+$cpf = $_POST['CPFCLI'];
 
-$sql = "UPDATE customer SET
-name_cust = '$name',
-email_cust = '$email',
-wash_type = '$wash_type',
-wax = '$wax'
-WHERE id_cust = $id";
+
+$sql = "UPDATE tbcliente SET
+NOMECLI = '$nome',
+EMAIL = '$email',
+CPFCLI = '$cpf',
+WHERE ID_CLI = $id";
 
 mysqli_query($con, $sql);
 

@@ -2,38 +2,26 @@
 include "connection.php";
 
 $id = $_GET['id'];
-$result = mysqli_query($con, "SELECT * FROM customer
-WHERE id_cust=$id");
+$result = mysqli_query($con, "SELECT * FROM tbcliente
+WHERE ID_CLI=$id");
 $row = mysqli_fetch_assoc($result);
 ?>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+    <main>
+        <div class="login-container">
+            <form action="update.php" method="post">
+                <input type="hidden" nome="id"
+                value="<?php echo $row['ID_CLI']; ?>"><br>
+                Nome: <input type="text" nome="nome"
+                value="<?php echo $row['NOMECLI']; ?>"><br>
+                Email: <input type="text" nome="email"
+                value="<?php echo $row['EMAIL']; ?>"><br>
+                CPF: <input type="text" nome="cpf"
+                value="<?php echo $row['CPFCLI']; ?>"><br>
 
-<div class="login-container">
-    <form action="update.php" method="post">
-        <input type="hidden" name="id"
-        value="<?php echo $row['id_cust']; ?>"><br>
-        Name: <input type="text" name="name"
-        value="<?php echo $row['name_cust']; ?>"><br>
-        Email: <input type="text" name="email"
-        value="<?php echo $row['email_cust']; ?>"><br>
 
-        <p>Select washing type:</p>
-            <p>Simple wash $60.00
-            <input type="radio" name="wash_type" value="Simple"
-            <?php if ($row ['wash_type'] == "Simple") echo "checked"; ?>></p>    
-            <p>Full wash $100.00
-            <input type="radio" name="wash_type" value="Full"
-            <?php if ($row ['wash_type'] == "Full") echo "checked"; ?>></p>
-            <p>Detailed wash $200.00
-            <input type="radio" name="wash_type" value="Detailed"
-            <?php if ($row ['wash_type'] == "Detailed") echo "checked"; ?>></p><br>
+            <input type="submit" value="Atualizar" class="return-button">
 
-            <p>Wax:</p>
-                    Yes: <input type="radio" name="wax" id="yes" value="Yes"
-                    <?php if ($row ['wax'] == "yes") echo "checked"; ?>>  
-                    No: <input type="radio" name="wax" id="no" value="No"
-                    <?php if ($row ['wax'] == "No") echo "checked"; ?>><br><br><br>
-
-                    <input type="submit" value="update" class="return-button">
-    </form>
+    </main>
+            </form>
 

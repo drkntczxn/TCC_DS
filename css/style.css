@@ -20,35 +20,46 @@ body {
    HEADER
    ========================= */
 
+/* =========================
+   HEADER
+   ========================= */
+
 .site-header {
     width: 100%;
     box-sizing: border-box;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    color:#e0d5c3;
+    background-color: #3f240f;
+}
 
-    background-color: #ffffff;
-    border-bottom: 1px solid #e8dfd0;
+.site-header h1 {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #ac8f6e;
 }
 
 .header-container {
     width: 100%;
     box-sizing: border-box;
-
     padding: 20px 40px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #3f240f;
-   
 }
 
 .header-container h1 {
     margin: 0;
-
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 32px;
     font-weight: normal;
     letter-spacing: 1px;
-
     color: #ac8f6e;
 }
 
@@ -60,9 +71,10 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;   /* centers children horizontally */
+    align-items: center;
     text-align: center;
     padding: 0 20px;
+    overflow: hidden; /* prevents carousel margin-collapse under header */
 }
 
 main p {
@@ -76,16 +88,20 @@ main p {
    LOGIN CONTAINER
    ========================= */
 
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .login-container {
     background-color: #ffffff;
-    height: auto;
     width: 350px;
-
     padding: 35px 30px;
 
     border-radius: 12px;
     border: 1px solid #e8dfd0;
-
     text-align: center;
 
     box-shadow: 0px 4px 20px rgba(74, 55, 30, 0.15);
@@ -99,17 +115,62 @@ main p {
     letter-spacing: 0.5px;
 }
 
-.login-container h4 {
-    font-family: Georgia, 'Times New Roman', serif;
-    color: #8a6d3b;
-    font-weight: normal;
-    letter-spacing: 0.3px;
-    height: 300px;
-}
-
 .login-container p {
     color: #8a7f6d;
     margin-bottom: 20px;
+}
+
+
+/* =========================
+   INPUTS
+   ========================= */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #3a2c1e;
+
+    background-color: #faf7f2;
+    border: 1px solid #e0d5c3;
+    border-radius: 6px;
+
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #b08c4f;
+    box-shadow: 0 0 0 2px rgba(176, 140, 79, 0.15);
+    background-color: #ffffff;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #a9a196;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5c3d1e;
+    margin-bottom: 2px;
 }
 
 
@@ -124,18 +185,14 @@ main p {
 
     background-color: #5c3d1e;
     color: white;
-
     text-decoration: none;
     text-align: center;
 
     border: none;
     border-radius: 25px;
-
     font-size: 16px;
-    line-height: normal;
 
     cursor: pointer;
-
     transition: 0.2s;
 }
 
@@ -149,23 +206,10 @@ input.return-button {
 }
 
 .btn {
-    display: block;
-
-    background-color: #b08c4f;
-    color: white;
-
-    text-decoration: none;
-
-    padding: 12px;
+    color: white; 
     margin-top: 5px;
-
-    border-radius: 25px;
-
-    transition: 0.2s;
-
     text-align: right;
-    margin-left: 30px;
-
+    margin-left: 10px;
     font-weight: bold;
     letter-spacing: 0.3px;
 }
@@ -182,9 +226,7 @@ input.return-button {
 .customersList {
     text-align: center;
     padding: 10px 0;
-
     border-bottom: 1px solid #f0e6d6;
-
     color: #4a3720;
 }
 
@@ -217,74 +259,36 @@ input.return-button {
 #carouselExampleAutoplaying {
     width: 100%;
     height: 350px !important;
-
     margin: 0 auto;
-
     overflow: hidden !important;
     position: relative;
 }
 
-
-/* Carousel inner */
-
 #carouselExampleAutoplaying .carousel-inner {
     width: 100%;
     height: 350px !important;
-
     overflow: hidden !important;
-
-    margin: 0;
-    padding: 0;
 }
-
-
-/* Individual slides */
 
 #carouselExampleAutoplaying .carousel-item {
     width: 100%;
     height: 350px !important;
-
-    margin: 0;
-    padding: 0;
 }
-
-
-/* Active slide */
-
-#carouselExampleAutoplaying .carousel-item.active {
-    height: 350px !important;
-}
-
-
-/* Images */
 
 #carouselExampleAutoplaying .carousel-item img {
     display: block;
-
     width: 100% !important;
     height: 350px !important;
-
     max-width: none !important;
-
     object-fit: cover !important;
     object-position: center;
-
-    margin: 0;
-    padding: 0;
-
     border: 0;
 }
-
-
-/* =========================
-   CAROUSEL CONTROLS
-   ========================= */
 
 #carouselExampleAutoplaying .carousel-control-prev,
 #carouselExampleAutoplaying .carousel-control-next {
     width: 8%;
     height: 350px;
-
     top: 0;
     bottom: auto;
 }
@@ -295,22 +299,13 @@ input.return-button {
    ========================= */
 
 @media (max-width: 768px) {
-
     main {
         padding: 0 10px;
     }
 
-    #carouselExampleAutoplaying {
-        width: 100%;
-        height: 220px !important;
-    }
-
-    #carouselExampleAutoplaying .carousel-inner {
-        height: 220px !important;
-    }
-
-    #carouselExampleAutoplaying .carousel-item,
-    #carouselExampleAutoplaying .carousel-item.active {
+    #carouselExampleAutoplaying,
+    #carouselExampleAutoplaying .carousel-inner,
+    #carouselExampleAutoplaying .carousel-item {
         height: 220px !important;
     }
 
@@ -323,4 +318,3 @@ input.return-button {
         height: 220px;
     }
 }
-

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Staff</title>
 </head>
 <body>
@@ -21,17 +21,16 @@
 
                 echo"<h4>ID  - Nome  -  Email </h4><br>";
 
-                /*while($row = mysqli_fetch_assoc($result)){
+                while($row = mysqli_fetch_assoc($result)){
                 echo"<div class='customersList'>";
-                    echo"$row[id_cust] -
-                        $row[name_cust] -
-                        $row[email_cust] -
-                        $row[wash_type] -
-                        $row[wax]<br> 
-                        <a href=delete.php?id=$row[id_cust]>Delete</a> |
-                        <a href=edit.php?id=$row[id_cust]> Edit </a>";
+                    echo"$row[ID_CLI] -
+                        $row[NOMECLI] -
+                        $row[CPFCLI] -
+                        $row[EMAIL]<br> -
+                        <a href='delete.php?ID_CLI=$row[ID_CLI]'>Excluir</a> |
+                        <a href=edit.php?id=$row[ID_CLI]> Edit </a>";
                     echo"</div>";
-                }*/
+}
                 ?>
 
             <br><br>
