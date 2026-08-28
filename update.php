@@ -10,7 +10,7 @@ $cpf = $_POST['CPFCLI'];
 $sql = "UPDATE tbcliente SET
 NOMECLI = '$nome',
 EMAIL = '$email',
-CPFCLI = '$cpf',
+CPFCLI = '$cpf'
 WHERE ID_CLI = $id";
 
 mysqli_query($con, $sql);

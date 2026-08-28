@@ -11,13 +11,13 @@ $row = mysqli_fetch_assoc($result);
         <div class="login-container">
             <h1>Ótica Fany</h1><br><br>  
             <form action="update.php" method="post">
-                <input type="hidden" nome="id"
-                value="<?php echo $row['ID_CLI']; ?>"><br>
-                Nome: <input type="text" nome="nome"
+                <input type="hidden" name="ID_CLI"
+                value="<?php echo $row['ID_CLI']; ?>"><br>''
+                Nome: <input type="text" name="NOMECLI"
                 value="<?php echo $row['NOMECLI']; ?>"><br>
-                Email: <input type="text" nome="email"
+                Email: <input type="text" name="EMAIL"
                 value="<?php echo $row['EMAIL']; ?>"><br>
-                CPF: <input type="text" nome="cpf"
+                CPF: <input type="text" name="CPFCLI"
                 value="<?php echo $row['CPFCLI']; ?>"><br><br>
 
 
