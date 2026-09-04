@@ -15,7 +15,8 @@
             <form action="register.php" method="post">
             Nome: <input type="text" name="nomecli" id="nome"><br><br>
             Email: <input type="text" name="email" id="email"><br><br>
-            CPF: <input type="text" name="cpfcli" id="cpf"><br>
+            CPF: <input type="text" name="cpfcli" id="cpf"><br><br>
+            Senha: <input type="password" name="senhacli" id="senha"><br>
             <!--Senha: <input type="text" name="senhacli" id="cpf"><br>-->
               
 

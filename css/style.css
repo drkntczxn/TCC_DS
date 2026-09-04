@@ -20,17 +20,14 @@ body {
    HEADER
    ========================= */
 
-/* =========================
-   HEADER
-   ========================= */
-
 .site-header {
     width: 100%;
     box-sizing: border-box;
     padding: 20px 40px;
     display: flex;
     align-items: center;
-    color:#e0d5c3;
+    justify-content: space-between;
+    color: #e0d5c3;
     background-color: #3f240f;
 }
 
@@ -40,25 +37,6 @@ body {
     font-size: 32px;
     font-weight: bolder;
     text-align: left;
-    letter-spacing: 1px;
-    color: #ac8f6e;
-}
-
-.header-container {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 20px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #3f240f;
-}
-
-.header-container h1 {
-    margin: 0;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 32px;
-    font-weight: normal;
     letter-spacing: 1px;
     color: #ac8f6e;
 }
@@ -207,7 +185,7 @@ input.return-button {
 }
 
 .btn {
-    color: white; 
+    color: white;
     margin-top: 5px;
     text-align: right;
     margin-left: 10px;
@@ -259,38 +237,42 @@ input.return-button {
 
 #carouselExampleAutoplaying {
     width: 100%;
-    height: 500px !important;
+    height: 32vw;
+    max-height: 500px;
     margin: 0 auto;
-    margin-top: 0; /* explicit, overrides any inherited/negative margin */
-    overflow: hidden !important;
+    overflow: hidden;
     position: relative;
 }
 
 #carouselExampleAutoplaying .carousel-inner {
     width: 100%;
-    height: 5000px !important;
-    overflow: hidden !important;
+    height: 32vw;
+    max-height: 500px;
+    overflow: hidden;
 }
 
 #carouselExampleAutoplaying .carousel-item {
     width: 100%;
-    height: 500px !important;
+    height: 32vw;
+    max-height: 500px;
 }
 
 #carouselExampleAutoplaying .carousel-item img {
     display: block;
-    width: 100% !important;
-    height: 500px !important;
+    width: 100%;
+    height: 32vw;
+    max-height: 500px;
     max-width: none !important;
-    object-fit: cover !important;
-    object-position: center top; /* changed from center */
+    object-fit: cover;
+    object-position: center top;
     border: 0;
 }
 
 #carouselExampleAutoplaying .carousel-control-prev,
 #carouselExampleAutoplaying .carousel-control-next {
     width: 8%;
-    height: 350px;
+    height: 32vw;
+    max-height: 500px;
     top: 0;
     bottom: auto;
 }
@@ -309,14 +291,43 @@ input.return-button {
     #carouselExampleAutoplaying .carousel-inner,
     #carouselExampleAutoplaying .carousel-item {
         height: 220px !important;
+        max-height: none;
     }
 
     #carouselExampleAutoplaying .carousel-item img {
         height: 220px !important;
+        max-height: none;
     }
 
     #carouselExampleAutoplaying .carousel-control-prev,
     #carouselExampleAutoplaying .carousel-control-next {
         height: 220px;
+        max-height: none;
     }
+}
+
+.password-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 36px; /* leaves room for the button */
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    color: #8a7f6d;
 }

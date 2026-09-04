@@ -28,13 +28,13 @@
                         $row[CPFCLI] -
                         $row[EMAIL]<br> -
                         <a href='delete.php?ID_CLI=$row[ID_CLI]'>Excluir</a> |
-                        <a href=edit.php?id=$row[ID_CLI]> Edit </a>";
+                        <a href=edit.php?id=$row[ID_CLI]> Editar </a>";
                     echo"</div>";
 }
                 ?>
 
             <br><br>
-            <a class="return-button" href="index.php">Return</a>
+            <a class="return-button" href="index.php">Voltar</a>
 
         </div>
 </main>
