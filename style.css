@@ -1,0 +1,343 @@
+/* =========================
+   GLOBAL
+   ========================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f1ea;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: #3a2c1e;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.site-header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #e0d5c3;
+    background-color: #3f240f;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #ac8f6e;
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 1px; /* breaks margin-collapse, invisible spacing */
+    overflow: hidden;
+}
+
+main p {
+    color: #8a7f6d;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   LOGIN CONTAINER
+   ========================= */
+
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 35px 30px;
+
+    border-radius: 12px;
+    border: 1px solid #e8dfd0;
+    text-align: center;
+
+    box-shadow: 0px 4px 20px rgba(74, 55, 30, 0.15);
+}
+
+.login-container h1,
+.login-container h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #5c3d1e;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.login-container p {
+    color: #8a7f6d;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   INPUTS
+   ========================= */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #3a2c1e;
+
+    background-color: #faf7f2;
+    border: 1px solid #e0d5c3;
+    border-radius: 6px;
+
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #b08c4f;
+    box-shadow: 0 0 0 2px rgba(176, 140, 79, 0.15);
+    background-color: #ffffff;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #a9a196;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5c3d1e;
+    margin-bottom: 2px;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.return-button {
+    display: inline-block;
+    width: 100px;
+    padding: 10px 20px;
+
+    background-color: #5c3d1e;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.return-button:hover {
+    background-color: #4a3018;
+}
+
+input.return-button {
+    height: 40px;
+    width: 140px;
+}
+
+.btn {
+    color: white;
+    margin-top: 5px;
+    text-align: right;
+    margin-left: 10px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
+.btn:hover {
+    background-color: #96743e;
+}
+
+
+/* =========================
+   CUSTOMER LIST
+   ========================= */
+
+.customersList {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0e6d6;
+    color: #4a3720;
+}
+
+.customersList a {
+    color: #b08c4f;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.customersList a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   UTILITY
+   ========================= */
+
+#mensagem {
+    display: none;
+    margin-top: 10px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: #fbe2e2;
+    color: #8a2c2c;
+    font-size: 13px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   CAROUSEL
+   ========================= */
+
+#carouselExampleAutoplaying {
+    width: 100%;
+    height: 32vw;
+    max-height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#carouselExampleAutoplaying .carousel-inner {
+    width: 100%;
+    height: 32vw;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+#carouselExampleAutoplaying .carousel-item {
+    width: 100%;
+    height: 32vw;
+    max-height: 500px;
+}
+
+#carouselExampleAutoplaying .carousel-item img {
+    display: block;
+    width: 100%;
+    height: 32vw;
+    max-height: 500px;
+    max-width: none !important;
+    object-fit: cover;
+    object-position: center top;
+    border: 0;
+}
+
+#carouselExampleAutoplaying .carousel-control-prev,
+#carouselExampleAutoplaying .carousel-control-next {
+    width: 8%;
+    height: 32vw;
+    max-height: 500px;
+    top: 0;
+    bottom: auto;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 10px;
+    }
+
+    #carouselExampleAutoplaying,
+    #carouselExampleAutoplaying .carousel-inner,
+    #carouselExampleAutoplaying .carousel-item {
+        height: 220px !important;
+        max-height: none;
+    }
+
+    #carouselExampleAutoplaying .carousel-item img {
+        height: 220px !important;
+        max-height: none;
+    }
+
+    #carouselExampleAutoplaying .carousel-control-prev,
+    #carouselExampleAutoplaying .carousel-control-next {
+        height: 220px;
+        max-height: none;
+    }
+}
+
+.password-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 36px; /* leaves room for the button */
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    color: #8a7f6d;
+}
